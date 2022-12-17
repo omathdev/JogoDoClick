@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilojogo.css" />
+    <title>Jogo Do Click</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <h2>Long life</h2>
+        Click Game
+      </h1>
+    </header>
+    <div class="objetos">
+      <div class="objeto1" onclick="sumir1()"></div>
+      <div class="objeto2" onclick="sumir2()"></div>
+      <div class="objeto3" onclick="sumir3()"></div>
+      <div class="objeto4" onclick="sumir4()"></div>
+      <div class="objeto5" onclick="sumir5()"></div>
+      <div class="objeto6" onclick="sumir6()"></div>
+
+      <div class="Reiniciargame" onclick="reiniciarr()"></div>
+    </div>
+    <div class="objetosdois">
+      <div class="obj1" onclick="miss()"></div>
+      <div class="obj2" onclick="miss2()"></div>
+      <div class="obj3" onclick="miss3()"></div>
+      <div class="obj4" onclick="miss4()"></div>
+      <div class="obj5" onclick="miss5()"></div>
+      <div class="obj6" onclick="miss6()"></div>
+    </div>
+    <button>REINICIAR</button>
+    <script>
+      var select1 = document.querySelector(".objeto1");
+      var select2 = document.querySelector(".objeto2");
+      var select3 = document.querySelector(".objeto3");
+      var select4 = document.querySelector(".objeto4");
+      var select5 = document.querySelector(".objeto5");
+      var select6 = document.querySelector(".objeto6");
+      var reiniciar = document.querySelector(".Reiniciargame");
+      //2
+    
+    
+     
+
+      function sumir1() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 55);
+        if (corr <= "10") {
+          select1.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select1.style.display = "none";
+          fundo.style.background = "#edd609";
+        }
+         
+        
+      }
+
+      function sumir2() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr2 = Math.floor(Math.random() * 42);
+        if (corr2 <= "10") {
+          select2.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select2.style.display = "none";
+          fundo.style.background = "#d1d2eb";
+        }
+        
+        
+      }
+      function sumir3() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 40);
+        if (corr <= "10") {
+          select3.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select3.style.display = "none";
+          fundo.style.background = "#9dfc03";
+        }
+      }
+      function sumir4() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          select4.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select4.style.display = "none";
+          fundo.style.background = "black";
+        }
+      } // 0 , p
+      function sumir5() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const cor = Math.floor(Math.random() * 44);
+        if (cor <= "10") {
+          select5.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select5.style.display = "none";
+          fundo.style.background = "#1da341";
+        }
+      }
+      function sumir6() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 30);
+        if (corr <= "10") {
+          select6.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          select6.style.display = "none";
+          fundo.style.background = "#f54272";
+        }
+      }
+
+      function reiniciarr() {
+        window.location.reload(true);
+      }
+
+      var enter = document.querySelector(".obj1");
+      var enter2 = document.querySelector(".obj2");
+      var enter3 = document.querySelector(".obj3");
+      var enter4 = document.querySelector(".obj4");
+      var enter5 = document.querySelector(".obj5");
+      var enter6 = document.querySelector(".obj6");
+
+      function miss() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter.style.display = "none";
+          fundo.style.background = "#706e5c";
+        }
+      }
+
+      function miss2() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter2.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter2.style.display = "none";
+          fundo.style.background = "#36e0db";
+        }
+      }
+      function miss3() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter3.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter3.style.display = "none";
+          fundo.style.background = "#36e06f";
+        }
+      }
+      function miss4() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter4.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter4.style.display = "none";
+          fundo.style.background = "green";
+        }
+      }
+      function miss5() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter5.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter5.style.display = "none";
+          fundo.style.background = "black";
+        }
+      }
+      function miss6() {
+        const texto = document.querySelector("h1");
+        const fundo = document.querySelector("body");
+        const corr = Math.floor(Math.random() * 45);
+        if (corr <= "10") {
+          enter6.style.background = "red";
+          alert("perdeu, recarregando o game");
+          window.location.reload(true);
+        } else {
+          enter6.style.display = "none";
+          fundo.style.background = "#dbb2bb";
+        }
+      }
+    </script>
+  </body>
+</html>
